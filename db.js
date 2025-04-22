@@ -2,10 +2,11 @@ const sql = require('mysql2');
 
 let db = sql.createConnection(
   {
-    host: 'localhost',
+    host: 'server-data.render.com',
     user: 'root',
     password: "Kavitha@431",
-    database: "usersData"
+    database: "usersData",
+    port: 3306
   }
 )
 function getData() {
